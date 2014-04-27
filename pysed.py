@@ -43,7 +43,6 @@ def rmline(oldstr, infile, dryrun=False):
         item = f.readline().splitlines()
         if len(item) == 0:
             break
-        newitem = item[0]
         rmitem = re.match(r'.*{}'.format(oldstr), item[0])
         if type(rmitem) == type(None): linelist.append(item[0])
     f.close()
