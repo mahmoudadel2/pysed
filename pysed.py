@@ -4,7 +4,7 @@ __version__ = 0.2
 
 import re
 
-def repace(oldstr, newstr, infile, dryrun=False):
+def replace(oldstr, newstr, infile, dryrun=False):
     '''
     Sed-like Replace function..
     Usage: pysed.replace(<Old string>, <Replacement String>, <Text File>)
